@@ -7,5 +7,5 @@ RUN R -e "install.packages(c('pls', 'Renvlp', 'ggpubr', \
   && tlmgr install elsarticle subfig enumitem float xcolor colortbl cleveref tabu varwidth psnfss setspace palatino mathpazo \
   && R -e "devtools::install_github('simulatr/simrel', dependencies=TRUE)"
 
-COPY user_settings /home/rstudio/.rstudio/monitored/user-settings 
+COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/
 
