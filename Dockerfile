@@ -6,6 +6,7 @@ RUN R -e "install.packages(c('pls', 'Renvlp', 'ggpubr', 'shinyjs', 'shinydashboa
       'pander', 'kableExtra', 'effects', 'svglite'), dependencies = TRUE)" \
   && tlmgr install elsarticle subfig enumitem float xcolor colortbl cleveref tabu varwidth psnfss setspace palatino mathpazo ulem\
   && tlmgr install soul todonotes easyreview ms pgf\
+  && R -e "devtools::install_github('tidyverse/tidyverse')" \
   && R -e "devtools::install_github('clauswilke/ggridges')" \
   && R -e "devtools::install_github('simulatr/simrel', dependencies=TRUE)" \
   && R -e "devtools::install_github('rstudio/flexdashboard')" \
