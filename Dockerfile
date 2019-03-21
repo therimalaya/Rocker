@@ -14,7 +14,6 @@ RUN R -e "install.packages(c('pls', 'Renvlp', 'ggpubr', 'shinyjs', 'shinydashboa
   && R -e "devtools::install_github('RinteRface/shinydashboardPlus')" \
   && R -e "devtools::install_github('nik01010/dashboardthemes')" \
   && R -e "devtools::install_github('rstudio/shinythemes')" \
-  && R -e "devtools::install_github('rstudio/DT')" \
-  && R -e "devtools::install_github('rstudio/radix')"
+  && R -e "devtools::install_github('rstudio/DT')"
 
 
