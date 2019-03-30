@@ -1,6 +1,7 @@
 ARG $GPAT
 FROM rocker/verse:devel
 
+RUN apt update
 RUN apt install --upgrade -y pandoc pandoc-citeproc
 RUN  tlmgr install acronym amsbsy amsgen amsmath amstext array atveryend auxhook arsclassica \
   && tlmgr install beramono biblatex bigintcalc bitset booktabs caption caption3 classicthesis \
