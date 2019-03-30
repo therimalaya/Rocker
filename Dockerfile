@@ -1,6 +1,7 @@
 ARG $GPAT
 FROM rocker/verse:devel
 
+RUN apt install --upgrade -y pandoc pandoc-citeproc
 RUN R -e "install.packages(c('pls', 'Renvlp', 'ggpubr', 'shinyjs', 'shinydashboard', \
       'reshape2', 'glmnet', 'doParallel', 'parallel', 'gridExtra', \
       'pander', 'kableExtra', 'effects', 'svglite', 'shinythemes', \
